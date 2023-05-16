@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookingg</title>
+   
+   
+   <style>
+        body {
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+}
+      fieldset{
+  border: 1px solid rgb(255,232,57);
+  width: 400px;
+  margin: 0 auto;
+  }
+  div.elem-group.inlined {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+div.elem-group {
+  margin: 20px 0;
+}
+
+div.elem-group.inlined4 {
+  width:5em;
+  display: inline-block;
+  float: left;
+  margin-left: 2%;
+ 
+}
+
+        </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Booking</h1>
+    <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+    
+
+    <fieldset>
+        <legend style="text-align: center;">Booking Now</legend>
+    
+    
+<br>
+
+<div class="elem-group inlined">
+<label for="Fcountry">Flying from</label><br>
+<select name="Fcountry" id="Fcountry">
+    <option value="Beijing">Beijing</option>
+    <option value="New Delhi">New Delhi</option>
+    <option value="Jakarta">Jakarta</option>
+    <option value="Islamabad">Islamabad</option>
+    <option value="Dhaka">Dhaka</option>
+    <option value="Tokyo">Tokyo</option>
+    <option value="Manila">Manila</option>
+    <option value="Bangkok">Bangkok</option> 
+  </select>
+</div>
+ 
+  <div class="elem-group inlined">
+  <label for="Tcountry">To</label><br>
+<select name="Tcountry" id="Tcountry">
+    <option value="Beijing">Beijing</option>
+    <option value=">New Delhi">New Delhi</option>
+    <option value="Jakarta">Jakarta</option>
+    <option value="Islamabad">Islamabad</option>
+    <option value="Dhaka">Dhaka</option>
+    <option value="Tokyo">Tokyo</option>
+    <option value="Manila">Manila</option>
+    <option value="Bangkok">Bangkok</option> 
+  </select>
+</div>
+
+  <div class="elem-group inlined">
+    <label for="Departing">Departing</label><br>
+    <input type="date" id="Departing" name="Departing" required>
+  </div>
+
+  <div class="elem-group inlined">
+    <label for="Returning">Returning</label><br>
+    <input type="date" id="Returning" name="Returning" required>
+  </div>
+ 
+
+  
+  <!-- inline4 -->
+  <div class="elem-group inlined4"> 
+    <label for="adult">Adults</label>
+    <input type="number" id="adult" name="adult" min="1" max="20"placeholder="2" min="1" required>
+  </div> 
+
+  <div class="elem-group inlined4"> 
+    <label for="Child">Child</label>
+    <input type="number" id="Child" name="Child" min="1" max="20">
+   </div> 
+  <div class="elem-group inlined4">
+    <label for="infant">infant</label>
+    <input type="number" id="infant" name="infant" min="1" max="5" placeholder="2" min="1" required>
+  </div>
+ 
+  
+  <div class="elem-group inlined4">
+    <label for="Cerency">Cerency</label><br>
+  <select name="Cerency" id="Cerency">
+      <option value="USD">	USD</option>
+      <option value=">EUR">EUR</option>
+      <option value="JPY">JPY</option>
+      <option value="HKD">HKD</option>
+      <option value="CHF">CHF</option>
+      <option value="AUD">AUD</option>
+      <option value="NZD">NZD</option>
+      <option value="KRW">KRW</option> 
+    </select>
+  </div><br>
+
+
+
+
+
+
+
+
+  <input type="submit"  value="submit"><br>
+
+
+    </fieldset>
+
+</form>
+</body>
+</html>
